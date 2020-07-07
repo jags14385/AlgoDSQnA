@@ -37,5 +37,7 @@ public class ArrayPermutations {
         System.out.println(str);
         Set<String> set = new ArrayPermutations().generatePermutations(str.toString());
         System.out.println(set);
+
+        //Iterative implementation : https://en.wikipedia.org/wiki/Steinhaus%E2%80%93Johnson%E2%80%93Trotter_algorithm
     }
 }
