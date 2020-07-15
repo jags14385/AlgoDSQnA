@@ -29,7 +29,7 @@ public class FindNumberOfOccurences {
         int rightEnd = arr.length - 1;
         int middle = (leftStart + rightEnd) / 2;
 
-        while (leftStart < rightEnd && leftStart >= 0) {
+        while (leftStart <= rightEnd && leftStart >= 0) {
             middle = (leftStart + rightEnd) / 2;
             if (arr[middle] == n) {
                 counter++;
@@ -55,7 +55,7 @@ public class FindNumberOfOccurences {
                 index++;
             } else break;
         }
-        
+
         return counter;
     }
 
